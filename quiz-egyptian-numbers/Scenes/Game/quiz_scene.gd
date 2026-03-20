@@ -29,6 +29,9 @@ func load_quiz(index : int) -> void:
 		btn.text = letters[i] + ". " + str(current_quiz.numbers_answers[i])
 		
 		if btn.pressed.is_connected(_on_answer_selected):
+			btn.focus_mode = Control.FOCUS_NONE
+			btn.release_focus()
+			
 			var callable = Callable(self, "_on_answer_selected")
 			for connection in btn.pressed.get_connections():
 				btn.pressed.disconnect(connection.callable)
