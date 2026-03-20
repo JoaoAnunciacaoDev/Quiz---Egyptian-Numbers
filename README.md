@@ -1,7 +1,6 @@
 # 🏛️ Quiz de Números Egípcios / Egyptian Numbers Quiz
 
 [![Play Online](https://img.shields.io/badge/Play-Online-success?style=for-the-badge&logo=github)](https://joaoanunciacaodev.github.io/Quiz---Egyptian-Numbers/)
-[![Play on itch.io](https://img.shields.io/badge/itch.io-Play-fa5c5c?style=for-the-badge&logo=itch.io)](https://joaoanunciacaodev.github.io/Quiz---Egyptian-Numbers/)
 
 ---
 
