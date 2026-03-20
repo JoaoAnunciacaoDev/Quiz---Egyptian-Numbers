@@ -44,4 +44,4 @@ Um jogo educativo e interativo desenvolvido para testar e ensinar o sistema de n
 
 ### 🎮 Como Jogar
 Você pode jogar diretamente pelo navegador clicando no link abaixo ou escaneando o QR Code (caso tenha impresso):
-👉 **[Jogar Agora]([LINK_DO_SEU_GITHUB_PAGES_AQUI])**
+👉 **[Jogar Agora](https://joaoanunciacaodev.github.io/Quiz---Egyptian-Numbers/)**
