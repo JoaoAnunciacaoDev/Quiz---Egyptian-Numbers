@@ -1,0 +1,4 @@
+res://Scenes/FinishGame/finish_game.gd
+res://Scenes/FinishGame/finish_game.tscn
+res://Scenes/MainMenu/main_menu.tscn
+res://Scenes/MainMenu/main_menu.gd

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://5ns2gtwtdcua"]
+
+[ext_resource type="Script" uid="uid://2buf83fmtt45" path="res://Scenes/FinishGame/finish_game.gd" id="1_q4krg"]
+[ext_resource type="Script" uid="uid://cx2slov6xjqtj" path="res://Scripts/Button/button.gd" id="2_wexl4"]
+
+[node name="FinishGame" type="Control" unique_id=1517346403 node_paths=PackedStringArray("subtitle")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q4krg")
+subtitle = NodePath("MarginContainer/VBoxContainer/Subtitle")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=962817331]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1028161062]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=901242918]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Fim do Quiz"
+
+[node name="Subtitle" type="Label" parent="MarginContainer/VBoxContainer" unique_id=254399893]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Você acertou 1 de 5 questões!!!"
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer" unique_id=523044828]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "Voltar ao Início"
+script = ExtResource("2_wexl4")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

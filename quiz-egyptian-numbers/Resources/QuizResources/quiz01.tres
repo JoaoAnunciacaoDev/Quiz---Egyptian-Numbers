@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizResource" format=3 uid="uid://cj2wptgymrnld"]
+
+[ext_resource type="Script" uid="uid://cc7ygib6vuo4e" path="res://Resources/quiz_resource.gd" id="1_v6pri"]
+[ext_resource type="Texture2D" uid="uid://bfqv3y6vw33yl" path="res://Assets/200_Number.png" id="1_xwe46"]
+
+[resource]
+script = ExtResource("1_v6pri")
+number_image = ExtResource("1_xwe46")
+correct_answer = 200
+numbers_answers = Array[int]([2, 20, 200, 120])
+metadata/_custom_type_script = "uid://cc7ygib6vuo4e"

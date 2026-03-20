@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://dsoc6vo4oting"]
+
+[ext_resource type="Script" uid="uid://bh7gejrprbbkk" path="res://Scenes/Game/quiz_scene.gd" id="1_6fln7"]
+[ext_resource type="Texture2D" uid="uid://bodjogldmk78s" path="res://icon.svg" id="1_7lupt"]
+[ext_resource type="Script" uid="uid://cc7ygib6vuo4e" path="res://Resources/quiz_resource.gd" id="2_jls64"]
+[ext_resource type="Resource" uid="uid://cj2wptgymrnld" path="res://Resources/QuizResources/quiz01.tres" id="3_40jm1"]
+[ext_resource type="Resource" uid="uid://c8u27x8586j2o" path="res://Resources/QuizResources/quiz02.tres" id="4_twrxu"]
+[ext_resource type="Resource" uid="uid://d4fcxh4fkswia" path="res://Resources/QuizResources/quiz03.tres" id="5_edu04"]
+[ext_resource type="Resource" uid="uid://g06m4o6624v6" path="res://Resources/QuizResources/quiz04.tres" id="6_kkmxv"]
+[ext_resource type="Resource" uid="uid://cpf8dk1awcw1a" path="res://Resources/QuizResources/quiz05.tres" id="7_kcclw"]
+[ext_resource type="Script" uid="uid://cx2slov6xjqtj" path="res://Scripts/Button/button.gd" id="9_twrxu"]
+
+[node name="QuizScene" type="Control" unique_id=1517346403 node_paths=PackedStringArray("title", "texture", "buttons")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6fln7")
+quizzes = Array[ExtResource("2_jls64")]([ExtResource("3_40jm1"), ExtResource("4_twrxu"), ExtResource("5_edu04"), ExtResource("6_kkmxv"), ExtResource("7_kcclw")])
+title = NodePath("MarginContainer/VBoxContainer/Title")
+texture = NodePath("MarginContainer/VBoxContainer/TextureRect")
+buttons = [NodePath("MarginContainer/VBoxContainer/GridContainer/Button"), NodePath("MarginContainer/VBoxContainer/GridContainer/Button2"), NodePath("MarginContainer/VBoxContainer/GridContainer/Button3"), NodePath("MarginContainer/VBoxContainer/GridContainer/Button4")]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=962817331]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1028161062]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=901242918]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Questão 1"
+
+[node name="Subtitle" type="Label" parent="MarginContainer/VBoxContainer" unique_id=254399893]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Qual número é esse?"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=434488087]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_7lupt")
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer" unique_id=926758226]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 24
+theme_override_constants/v_separation = 12
+columns = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=523044828]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "A. 1"
+script = ExtResource("9_twrxu")
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=885915065]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "B. 2"
+script = ExtResource("9_twrxu")
+
+[node name="Button3" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1335698362]
+layout_mode = 2
+text = "C. 3"
+script = ExtResource("9_twrxu")
+
+[node name="Button4" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1784655940]
+layout_mode = 2
+text = "D. 4"
+script = ExtResource("9_twrxu")

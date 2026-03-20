@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://d4js3ive1xs0x"]
+
+[ext_resource type="Script" uid="uid://cx2slov6xjqtj" path="res://Scripts/Button/button.gd" id="1_uqdog"]
+[ext_resource type="Script" uid="uid://xy2ns3vsr8kf" path="res://Scenes/MainMenu/main_menu.gd" id="1_v763k"]
+
+[node name="MainMenu" type="Control" unique_id=1220646281 node_paths=PackedStringArray("play_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v763k")
+play_button = NodePath("MarginContainer/VBoxContainer/Play")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1646857241]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=701050716]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=25583446]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Quiz
+Números Egípcios"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer" unique_id=721608791]
+custom_minimum_size = Vector2(128, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Jogar"
+script = ExtResource("1_uqdog")
+
+[node name="Title2" type="Label" parent="MarginContainer/VBoxContainer" unique_id=420527610]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Professora Manu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
