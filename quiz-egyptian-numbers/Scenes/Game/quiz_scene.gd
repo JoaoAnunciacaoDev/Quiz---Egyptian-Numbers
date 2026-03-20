@@ -22,9 +22,11 @@ func load_quiz(index : int) -> void:
 	title.text = "Questão " + str(current_quiz_index + 1)
 	texture.texture = current_quiz.number_image
 	
+	var letters = ["A", "B", "C", "D"]
+	
 	for i in range(buttons.size()):
 		var btn : Button = buttons[i]
-		btn.text = str(current_quiz.numbers_answers[i])
+		btn.text = letters[i] + ". " + str(current_quiz.numbers_answers[i])
 		
 		if btn.pressed.is_connected(_on_answer_selected):
 			var callable = Callable(self, "_on_answer_selected")
