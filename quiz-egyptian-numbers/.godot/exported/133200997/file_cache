@@ -1,10 +1,10 @@
 res://Resources/QuizResources/quiz01.tres::92b3ac513e51d4852a7078d4eb01e219::1773981112::res://.godot/exported/133200997/export-767590b0a4547d35ded1120619de9160-quiz01.res
 res://Resources/QuizResources/quiz02.tres::e0df1bdc33ecd5eb03cbc6b7af155453::1773981112::res://.godot/exported/133200997/export-fa471e2c56caf39b27987ac9efcf3473-quiz02.res
 res://Resources/QuizResources/quiz03.tres::cc7f02214bc83d972686c923b8e5b864::1773982159::res://.godot/exported/133200997/export-ae34fb7ec76adb922768981b2785aae4-quiz03.res
-res://Resources/QuizResources/quiz04.tres::37adeea9272a095be2f9b95ccfe59295::1773982159::res://.godot/exported/133200997/export-c2b11a26c27bb4da439d2a88192f18bd-quiz04.res
+res://Resources/QuizResources/quiz04.tres::6dba7dccef30dc072277b831312cfb6d::1774052089::res://.godot/exported/133200997/export-c2b11a26c27bb4da439d2a88192f18bd-quiz04.res
 res://Resources/QuizResources/quiz05.tres::6b8aa4502220fbb78b9dc72cb7c95f9c::1773982159::res://.godot/exported/133200997/export-35f87eed5ec9e5247f5f748e5b922471-quiz05.res
 res://Scenes/Background/background.tscn::06cd001c2c8e21324e9cff5d1466926d::1773982856::res://.godot/exported/133200997/export-061475937d0d5cfb1ebd5cf929298ddd-background.scn
 res://Scenes/FinishGame/finish_game.tscn::ead650bfb16d3c329fbee9e374e79f47::1773983786::res://.godot/exported/133200997/export-4029b140bc3a6d446c600b8612577374-finish_game.scn
-res://Scenes/Game/quiz_scene.tscn::6a6ae6c3ef7673be3011fea0b811b5db::1773986498::res://.godot/exported/133200997/export-14540b3243a20607608178941e112f6a-quiz_scene.scn
+res://Scenes/Game/quiz_scene.tscn::6a6ae6c3ef7673be3011fea0b811b5db::1774052089::res://.godot/exported/133200997/export-14540b3243a20607608178941e112f6a-quiz_scene.scn
 res://Scenes/MainMenu/main_menu.tscn::59dd609070cc5f7ae5716c734450999e::1773983877::res://.godot/exported/133200997/export-2dfcd67214f30425d40634aeb026f8a6-main_menu.scn
 res://Scenes/Transition/transition.tscn::1c5618f4c1e8e995604d7eb5f7da8dd3::1773980164::res://.godot/exported/133200997/export-7249f991f5735572525f9870dc2e7197-transition.scn
