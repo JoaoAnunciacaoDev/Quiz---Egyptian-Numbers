@@ -7,5 +7,5 @@
 script = ExtResource("1_miuwg")
 number_image = ExtResource("1_lrpv6")
 correct_answer = 110
-numbers_answers = Array[int]([120, 12000, 1200, 12])
+numbers_answers = Array[int]([110, 12000, 1200, 12])
 metadata/_custom_type_script = "uid://cc7ygib6vuo4e"
